@@ -1,32 +1,23 @@
 ---
 title: Slanted Parallel
 ---
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>
-      {{ page.title }}
-    </title>
-  </head>
-  <body>
-    {% include header.html %}
-    <h3>Posts</h3>
-    {% if site.posts.size == 0 %}
-      <div class="warning">No posts!</div>
-    {% else %}
-      <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">
-              {{ post.title }}
-            </a>
-            <div class="excerpt">
-              {{ post.excerpt }}
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-    {% include footer.html %}
-  </body>
-</html>
+{% include header.html %}
+<div class="warning">Styling coming soon!</div>
+<h3>Posts</h3>
+{% if site.posts.size == 0 %}
+  <div class="warning">No posts!</div>
+{% else %}
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+        <div class="excerpt">
+          {{ post.excerpt }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% include footer.html %}
