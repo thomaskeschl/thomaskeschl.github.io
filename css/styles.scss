@@ -16,6 +16,25 @@ body {
   margin: 0;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-units {
+  @extend .flex-column;
+  flex: 1;
+}
+
+.body-container {
+  @extend .flex-column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -32,6 +51,18 @@ a:hover {
   color: $secondary-highlight-color;
 }
 
+main {
+  @extend .flex-column-units;
+  position: relative;
+}
+
+.main-container {
+  @extend main;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .small-post {
   width: $post-width;
   margin: 1em auto;
@@ -40,7 +71,17 @@ a:hover {
   padding: 0 1em;
 }
 
+.drop-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+}
+
 footer {
+  padding: .25em 0;
   text-align: center;
   font-size: $tiny-text;
 }
