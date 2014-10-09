@@ -5,8 +5,7 @@ $background-color: #FFF;
 $text-color: #000;
 $primary-highlight-color: #808080;
 $secondary-highlight-color: #F60;
-$title-text: 110%;
-$post-text: 80%;
+$title-text: 120%;
 $tiny-text: 70%;
 $post-width: 80%;
 
@@ -14,6 +13,14 @@ body {
   font: 100% $font-stack;
   color: $text-color;
   background-color: $background-color;
+  margin: 0;
+}
+
+header {
+  background-color: $secondary-highlight-color;
+  padding: 1em;
+  color: #FFF;
+  width: 100%;
 }
 
 a {
@@ -25,28 +32,15 @@ a:hover {
   color: $secondary-highlight-color;
 }
 
-#header {
-  background-color: $secondary-highlight-color;
-  padding: 1em;
-}
-
-#footer {
-  text-align: center;
-  font-size: $tiny-text;
-}
-
 .small-post {
   width: $post-width;
   margin: 1em auto;
   border: solid 1px $secondary-highlight-color;
   border-radius: .25em;
-  padding: 1em;
+  padding: 0 1em;
+}
 
-  .title {
-    font-size: $title-text;
-  }
-
-  .excerpt {
-    font-size: $post-text;
-  }
+footer {
+  text-align: center;
+  font-size: $tiny-text;
 }
