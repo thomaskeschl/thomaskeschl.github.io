@@ -9,6 +9,24 @@ $title-text: 120%;
 $tiny-text: 70%;
 $post-width: 80%;
 
+@mixin display-flex() {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-direction-column() {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flex($flex-value) {
+  -ms-flex: $flex-value 1 0.000000001px;
+  -webkit-flex: $flex-value;
+  flex: $flex-value;
+}
+
 body {
   font: 100% $font-stack;
   color: $text-color;
@@ -17,13 +35,13 @@ body {
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
+  @include display-flex();
+  @include flex-direction-column();
 }
 
 .flex-column-units {
   @extend .flex-column;
-  flex: 1;
+  @include flex(1);
 }
 
 .body-container {
@@ -36,7 +54,7 @@ body {
 }
 
 header {
-  display: flex;
+  @include display-flex();
   justify-content: center;
   background-color: $secondary-highlight-color;
   color: #FFF;
