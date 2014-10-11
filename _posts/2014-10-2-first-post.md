@@ -1,7 +1,6 @@
 ---
 title: First Post!
 layout: post
-custom_property: property
 ---
 
 Welcome to my new blog! It's designed using [Jekyll](http://jekyllrb.com/) and hosted by [GitHub Pages](http://pages.github.com) (obviously).
