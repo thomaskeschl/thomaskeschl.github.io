@@ -1,5 +1,6 @@
 $font-stack:    Arial, Helvetica, sans-serif;
 $background-color: #FFF;
+$header-text-color: #FFF;
 $text-color: #000;
 $primary-highlight-color: #808080;
 $secondary-highlight-color: #F60;
@@ -13,10 +14,15 @@ $post-width: 80%;
   display: flex;
 }
 
-@mixin flex-direction-column() {
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+@mixin flex-direction($flex-direction) {
+  -ms-flex-direction: $flex-direction;
+  -webkit-flex-direction: $flex-direction;
+  flex-direction: $flex-direction;
+}
+
+@mixin flex-wrap($flex-wrap) {
+  -webkit-flex-wrap: $flex-wrap;
+  flex-wrap: $flex-wrap;
 }
 
 @mixin flex($flex-value) {
@@ -34,7 +40,7 @@ body {
 
 .flex-column {
   @include display-flex();
-  @include flex-direction-column();
+  @include flex-direction(column);
 }
 
 .flex-column-units {
@@ -51,20 +57,53 @@ body {
   left: 0;
 }
 
+.button-link {
+  padding: 0 .25em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: .5em;
+}
+
 header {
   @include display-flex();
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
   justify-content: center;
   background-color: $secondary-highlight-color;
-  color: #FFF;
+  color: $header-text-color;
+
+  h1 {
+    margin: .25em 0;
+  }
+
+  a {
+    @extend .button-link;
+    border-color: white;
+    color: $header-text-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: white;
+    color: $secondary-highlight-color;
+  }
 }
 
-a {
-  color: $text-color;
-  text-decoration: none;
-}
+nav {
+  display: block;
+  width: 100%;
 
-a:hover {
-  color: $secondary-highlight-color;
+  ul {
+    @include display-flex;
+    justify-content: center;
+    margin: 0 0 .25em 0;
+    padding: 0;
+
+    li {
+      display: block;
+      margin: 0 1em;
+    }
+  }
 }
 
 main {
@@ -77,6 +116,17 @@ main {
   display: block;
   overflow-y: auto;
   overflow-x: hidden;
+  a {
+    @extend .button-link;
+    border-color: $secondary-highlight-color;
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    background-color: $secondary-highlight-color;
+  }
 }
 
 .small-post {
@@ -85,6 +135,20 @@ main {
   border: solid 1px $secondary-highlight-color;
   border-radius: .25em;
   padding: 0 1em;
+
+  h2 a {
+    padding: initial;
+    border-width: 0;
+    border-style: none;
+    border-radius: 0;
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  h2 a:hover {
+    color: $secondary-highlight-color;
+    background-color: initial;
+  }
 }
 
 .drop-shadow {
