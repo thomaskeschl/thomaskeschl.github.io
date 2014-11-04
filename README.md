@@ -10,6 +10,6 @@ If you wish to clone the project just to get a feel for what Pages and Jekyll ca
 3. Navigate to the directory of your local clone.
 4. `bundle install`
 5. `bundle exec jekyll serve`
-6. Navigate to [http://localhost:4000]
+6. Navigate to http://localhost:4000
 
-It's that easy. For more advanced Jekyll documentation, check out [http://jekyllrb.com].
+It's that easy. For more advanced Jekyll documentation, check out http://jekyllrb.com.
