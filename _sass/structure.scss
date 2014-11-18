@@ -116,6 +116,7 @@ main {
   display: block;
   overflow-y: auto;
   overflow-x: hidden;
+  padding: 1em;
   a {
     @extend .button-link;
     border-color: $secondary-highlight-color;
@@ -157,7 +158,7 @@ main {
   left: 0;
   right: 0;
   height: 6px;
-  box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 5px 6px -3px rgba(0, 0, 0, 0.4);
 }
 
 footer {
