@@ -32,7 +32,7 @@ Now look at the new hotness:
                 .sum();
 
 
-Da fuq? Could it be this clean? Hell's yes it could and it is! Now, there's nothing long with for loops (even if I did make fun of them earlier), but how could you not love this new, expressive Java?
+Da fuq? Could it be this clean? Hell's yes it could and it is! Now, there's nothing wrong with for loops (even if I did make fun of them earlier), but how could you not love this new, expressive Java?
 
 My other remark is that it is *fast*. These streams are incredibly efficient at doing what they're doing, as they are parallelizable if you aren't doing something that's order dependant. The filtering conditions also allow you to reduce the amount of stuff being stored in memory, which was really handy for writing my Sieve of Eratosthenes [implementation](https://github.com/thomaskeschl/eu/blob/master/src/main/java/problem/Problem3.java).
 
