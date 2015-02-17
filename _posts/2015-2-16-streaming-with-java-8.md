@@ -27,7 +27,7 @@ Take this old school Java 7 code, for instance. Here, I'm trying to find the sum
 
 Now look at the new hotness:
 
-    return IntStream.limit(1000)
+    return IntStream.range(0, 100)
                 .filter(num -> num % 3 == 0 || num % 5 == 0)
                 .sum();
 
