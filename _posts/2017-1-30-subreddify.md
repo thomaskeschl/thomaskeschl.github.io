@@ -3,9 +3,9 @@ title: 'Subreddify'
 layout: post
 ---
 
-Man, I thought I was apologizing for the absence last time. It's been almost 2 years since the last update. 2 years! The last time I wrote one of these I was in my apartment with my girlfriend and dog. Now, I'm in my house, with my wife, a daughter and my dog. And my brother-in-law. Starting to see why I haven't been focusing too much on hobby projects lately?
+Man, I thought I was apologizing for the absence last time. It's been almost 2 years since the last update. 2 years! The last time I wrote one of these I was in my apartment with my girlfriend and dog. Now, I'm in my house, with my wife, my daughter and my dog. And my brother-in-law. Starting to see why I haven't been focusing too much on hobby projects lately?
 
-Lets jump right in, shall we? [Subreddify](https://github.com/syntacted/subreddify-android) is a project that came organically out of a lack of what the Reddit app can do. I recently opened up a sub for the DnD group I'm a part of, which prompted many of them to complain about a lack of notifications when people post to the sub. So, that's the problem I'm trying to solve here.
+Lets jump right in, shall we? [Subreddify](https://github.com/syntactec/subreddify-android) is a project that came organically out of a lack of what the Reddit app can do. I recently opened up a sub for the DnD group I'm a part of, which prompted many of them to complain about a lack of notifications when people post to the sub. So, that's the problem I'm trying to solve here.
 
 A quick note about Android development. I've been wanting to get into it for a while now, I just haven't had the proper excuse. However, coming from a previous job context where I was a GWT power user, a lot of it makes sense to me. GWT borrowed from Android a lot, I think, so conceptually, I feel comfortable. Also, the last time I started up an Android project, I was an Eclipse user.
 
