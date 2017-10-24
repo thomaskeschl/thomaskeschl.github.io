@@ -2,13 +2,16 @@
 ---
 {% include header.html %}
 {% for post in site.posts %}
-  <div class="small-post">
-    <h2>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <div>
-      {{ post.excerpt }}
-    </div>
-  </div>
+<div class="mdc-card">
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">{{ post.title }}</h1>
+  </section>
+  <section class="mdc-card__supporting-text">
+    {{ post.excerpt }}
+  </section>
+  <section class="mdc-card__actions">
+    <a href="{{ post.url }}" class="mdc-button">Continue Reading</a>
+  </section>
+</div>
 {% endfor %}
 {% include footer.html %}

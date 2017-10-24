@@ -1,23 +1,25 @@
 <!DOCTYPE HTML>
-<html>
-  <head>
+<html class="mdc-typography">
+<head>
     <title>
-      {{ site.title }}{%if page.title %} - {{ page.title }}{% endif %}
+        {{ site.title }}{%if page.title %} - {{ page.title }}{% endif %}
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  </head>
-  <body>
-  <div class="body-container">
-    <header>
-      <h1>{{ site.title }}</h1>
-      <nav>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="https://github.com/thomaskeschl">On GitHub</a></li>
-        </ul>
-      </nav>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div>
+    <header class="mdc-toolbar mdc-toolbar--fixed">
+        <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
+                <span class="mdc-toolbar__title">{{ site.title }}</span>
+            </section>
+        </div>
     </header>
-    <main>
-      <div class="main-container">
+    <main class="mdc-toolbar-fixed-adjust">
+        <div>

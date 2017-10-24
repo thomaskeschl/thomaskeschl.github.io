@@ -1,5 +1,30 @@
 ---
 ---
 
+main {
+  width: 95%;
+  margin: 0 auto;
+
+  .mdc-card {
+    margin: 10px 0;
+  }
+
+  a:not(.mdc-button) {
+    text-decoration:none;
+    color: #FF9800;
+  }
+
+  a:not(.mdc-button):hover {
+    text-decoration: underline;
+  }
+}
+
+footer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
 @import 'normalize.min';
 @import 'structure';
