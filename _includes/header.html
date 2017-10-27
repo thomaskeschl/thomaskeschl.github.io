@@ -16,10 +16,25 @@
     <header class="mdc-toolbar mdc-toolbar--fixed">
         <div class="mdc-toolbar__row">
             <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-                <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
+                <a href="#" class="material-icons mdc-toolbar__menu-icon menu">menu</a>
                 <span class="mdc-toolbar__title">{{ site.title }}</span>
             </section>
         </div>
     </header>
+    <div>
+        <aside class="mdc-temporary-drawer mdc-typography" data-mdc-auto-init="MDCTemporaryDrawer">
+            <nav class="mdc-temporary-drawer__drawer">
+                <div class="mdc-temporary-drawer__toolbar-spacer mdc-theme--primary-bg">
+                    <h3 class="mdc-typography--title">Navigate</h3>
+                </div>
+                <nav id="icon-with-text-demo" class="mdc-temporary-drawer__content mdc-list">
+                    <a class="mdc-list-item mdc-temporary-drawer--selected" href="https://github.com/thomaskeschl">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">public</i>GitHub
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                    </a>
+                </nav>
+            </nav>
+        </aside>
     <main class="mdc-toolbar-fixed-adjust">
-        <div>
+
